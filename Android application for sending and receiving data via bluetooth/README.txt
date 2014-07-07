@@ -1,0 +1,1 @@
+Contains the android app code for sending and receiving the data via bluetooth.

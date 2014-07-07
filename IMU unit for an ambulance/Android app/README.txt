@@ -1,0 +1,1 @@
+Contains code for android application which can be used to control and configure IMU device via bluetooth.
