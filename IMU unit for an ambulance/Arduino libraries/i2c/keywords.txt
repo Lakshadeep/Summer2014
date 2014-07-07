@@ -1,0 +1,12 @@
+i2c	KEYWORD1
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+writeRegister	KEYWORD2
+readRegister	KEYWORD2
+#######################################
+# Constants (LITERAL1)
+#######################################
+BLINK_SHORT    LITERAL1
+BLINK_MEDIUM   LITERAL1
+BLINK_LONG     LITERAL1

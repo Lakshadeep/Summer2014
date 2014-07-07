@@ -1,0 +1,26 @@
+application: nio-internship-project
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+- url: /
+  script: helloworld.php
+- url: /config/
+  script: db_config.php
+- url: /connect/
+  script: db_connect.php
+- url: /create/
+  script: create_product.php
+- url: /delete/
+  script: delete_product.php
+- url: /get_all_products/
+  script: get_all_products.php
+- url: /get_product_details/
+  script: get_product_details.php
+- url: /update/
+  script: update_product.php
+- url: /create_new_user/
+  script: create_new_user.php
+- url: /update_user/
+  script: update_user.php

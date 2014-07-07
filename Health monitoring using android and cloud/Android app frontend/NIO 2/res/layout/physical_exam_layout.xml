@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:paddingLeft="20dip"
+    android:paddingTop="20dip"
+    android:paddingRight="20dip"
+    >
+
+    <TextView
+        android:id="@+id/physical_exam_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Physical Examination details"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:paddingBottom="30dip"
+        android:textStyle="bold|italic"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/physical_exam_details" 
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:id="@+id/temp_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="75"
+            android:text="Body temperature:"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            />
+
+        <EditText
+            android:id="@+id/temp_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/blood_pressure_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_marginTop="30dip"
+        android:text="Blood Pressure:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/blood_pressure_tv"
+       
+        >
+
+        <TextView
+            android:id="@+id/systollic_pressure_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Systollic Pressure"
+            android:layout_weight="75"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/systollic_pressure_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:ems="10"
+            android:layout_weight="25"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/diastollic_pressure_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diastollic Pressure"
+            android:layout_weight="75"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/diastollic_pressure_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:ems="10"
+            android:layout_weight="25"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_marginTop="26dp" >
+
+        <TextView
+            android:id="@+id/sugar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood sugar(mg/L)"
+            android:layout_weight="75"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/sugar_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="25"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout7"
+        android:layout_marginTop="25dp" >
+
+        <TextView
+            android:id="@+id/ecg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ECG"
+            android:layout_weight="75"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/ecg_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       
+            android:ems="10"
+            android:layout_weight="25"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout8"
+        android:layout_marginTop="25dp" >
+
+        <TextView
+            android:id="@+id/pulse_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pulse oxygen"
+            android:layout_weight="75"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/pulse_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:ems="10"
+            android:layout_weight="25"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/physical_exam_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="141dp"
+        android:text="Store in local database" />
+
+    <Button
+        android:id="@+id/physical_exam_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/physical_exam_submit"
+        android:layout_alignRight="@+id/physical_exam_submit"
+        android:layout_below="@+id/physical_exam_submit"
+        android:layout_marginTop="57dp"
+        android:text="Sync in cloud" />
+
+</RelativeLayout>

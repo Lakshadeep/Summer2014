@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+     >
+
+    <TextView
+        android:id="@+id/practitioners_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Medical Practitioners details"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingBottom="20dip"
+        android:textStyle="bold|italic"
+         />
+
+    <TextView
+        android:id="@+id/p_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/practitioners_details"
+        android:layout_marginTop="19dp"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/p_name_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/p_name_tv"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/p_phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/p_name_et"
+        android:layout_marginTop="45dp"
+        android:text="Phone no."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/p_phone_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/p_phone_tv"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/p_address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/p_phone_et"
+        android:layout_marginTop="30dp"
+        android:text="Address:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/p_address_et"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_above="@+id/p_doc_tv"
+        android:layout_alignLeft="@+id/p_address_tv"
+        android:layout_alignRight="@+id/p_phone_et"
+        android:layout_below="@+id/p_address_tv"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+
+    <TextView
+        android:id="@+id/p_doc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/p_doc_et"
+        android:layout_alignLeft="@+id/p_address_et"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Date of checkup"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/p_doc_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/practitioner_details_sync"
+        android:layout_alignLeft="@+id/p_doc_tv"
+        android:layout_alignRight="@+id/p_address_et"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/practitioner_details_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/practitioner_details_sync"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/practitioner_details_sync"
+        android:layout_marginBottom="39dp"
+        android:text="Sync in cloud" />
+
+    <Button
+        android:id="@+id/practitioner_details_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/practitioner_details_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:text="Store in local database" />
+
+</RelativeLayout>

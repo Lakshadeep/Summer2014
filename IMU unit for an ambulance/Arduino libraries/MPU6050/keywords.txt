@@ -1,0 +1,20 @@
+MPU6050	KEYWORD1
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+initialise	KEYWORD2
+read_accelerometer	KEYWORD2
+print_accelerometer	KEYWORD2
+read_gyroscope	KEYWORD2
+print_gyroscope	KEYWORD2
+process_accl_data	KEYWORD2
+print_process_accl_data	KEYWORD2
+process_gyro_data	KEYWORD2
+print_process_gyro_data	KEYWORD2
+send_data_to_matlab	KEYWORD2
+#######################################
+# Constants (LITERAL1)
+#######################################
+BLINK_SHORT    LITERAL1
+BLINK_MEDIUM   LITERAL1
+BLINK_LONG     LITERAL1

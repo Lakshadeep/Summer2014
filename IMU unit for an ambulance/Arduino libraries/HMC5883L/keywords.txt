@@ -1,0 +1,15 @@
+HMC5883L	KEYWORD1
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+initialise	KEYWORD2
+read_data	KEYWORD2
+print_data	KEYWORD2
+process_magneto_data	KEYWORD2
+print_process_magneto_data	KEYWORD2	
+#######################################
+# Constants (LITERAL1)
+#######################################
+BLINK_SHORT    LITERAL1
+BLINK_MEDIUM   LITERAL1
+BLINK_LONG     LITERAL1

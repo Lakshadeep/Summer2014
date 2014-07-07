@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg21"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Home" 
+    android:keepScreenOn="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:showDividers="middle"
+            android:divider="@drawable/empty_tall_divider"
+            android:paddingBottom="5dp"
+            
+            >
+            <Button
+                 android:background="@drawable/custom_button"
+                android:id="@+id/selectbt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Select" 
+                 android:textColor="#fcfaf3"
+                />
+
+            <Button
+                android:background="@drawable/custom_button"
+                android:id="@+id/connectbt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="Connect" 
+                 android:textColor="#fcfaf3"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:showDividers="middle"
+            android:divider="@drawable/empty_tall_divider"
+              android:paddingBottom="5dp"
+             >
+
+            <Button
+                 android:background="@drawable/custom_button"
+                android:id="@+id/configbt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Configure" 
+                 android:textColor="#fcfaf3"
+                 />
+
+            <Button
+                 android:background="@drawable/custom_button"
+                android:id="@+id/startbt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Start " 
+                android:textColor="#fcfaf3"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:showDividers="middle"
+            android:divider="@drawable/empty_tall_divider"
+              android:paddingBottom="5dp"
+            >
+
+            <Button
+                 android:background="@drawable/custom_button"
+                android:id="@+id/calibratebt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calibrate" 
+                android:layout_weight="0.5"
+                 android:textColor="#fcfaf3"
+                />
+
+            <Button
+                 android:background="@drawable/custom_button"
+                android:id="@+id/closebt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Close" 
+                 android:textColor="#fcfaf3"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/messagetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:text="................."
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
